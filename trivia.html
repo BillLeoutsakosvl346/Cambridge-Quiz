@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Trivia!</title>
+    <link href="trivia_style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="colored-section">
+        <div class="top-text">
+            Trivia!
+        </div>
+    </div>
+
+    <div class="part-text">
+        Part 1:
+    </div>
+
+    <hr class="horiz-line1">
+
+    <div class="first-question">
+        In what year did the construction of the chapel of King's College of Cambridge started?
+    </div>
+
+    <div id="multi-button-group" class="multi-button-positioning">
+        <button class="multi-choice-button" onclick="checkAnswer('wrong')">1553</button>
+        <button class="multi-choice-button" onclick="checkAnswer('correct')">1441</button>
+        <button class="multi-choice-button" onclick="checkAnswer('wrong')">1489</button>
+    </div>
+
+    <div id="left-button-group" class="left-button-positioning" style="display: none;">
+        <button id="tryagain-button" class="tryagain-button" onclick="tryAgain()">Try Again!</button>
+    </div>
+
+    <div id="result-message" class="result-message"></div>
+
+    <div class="part-text2">
+        Part 2:
+    </div>
+
+    <hr class="horiz-line2">
+
+    <div class="second-question">
+        Which Cambridge College is the oldest?
+    </div>
+
+    <div class="input-and-button">
+        <input type="text" id="user-input" class="text-input" placeholder="Answer here">
+        <button id="submit-button" class="submit-button" onclick="check2ndAnswer()">Submit!</button>
+    </div>
+
+    <div id="result-message2" class="result-message2"></div>
+
+    <script src="trivia_script.js"></script>
+
+</body>
+</html>
